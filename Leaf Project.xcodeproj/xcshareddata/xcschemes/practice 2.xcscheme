@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "6AFC14F02AF6EDD500A40C93"
-               BuildableName = "practice 2.app"
-               BlueprintName = "practice 2"
-               ReferencedContainer = "container:practice 2.xcodeproj">
+               BuildableName = "Leaf Project.app"
+               BlueprintName = "Leaf Project"
+               ReferencedContainer = "container:Leaf Project.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -35,9 +35,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "6AFC15002AF6EDD700A40C93"
-               BuildableName = "practice 2Tests.xctest"
-               BlueprintName = "practice 2Tests"
-               ReferencedContainer = "container:practice 2.xcodeproj">
+               BuildableName = "Leaf ProjectTests.xctest"
+               BlueprintName = "Leaf ProjectTests"
+               ReferencedContainer = "container:Leaf Project.xcodeproj">
             </BuildableReference>
          </TestableReference>
          <TestableReference
@@ -46,9 +46,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "6AFC150A2AF6EDD700A40C93"
-               BuildableName = "practice 2UITests.xctest"
-               BlueprintName = "practice 2UITests"
-               ReferencedContainer = "container:practice 2.xcodeproj">
+               BuildableName = "Leaf ProjectUITests.xctest"
+               BlueprintName = "Leaf ProjectUITests"
+               ReferencedContainer = "container:Leaf Project.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -68,9 +68,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "6AFC14F02AF6EDD500A40C93"
-            BuildableName = "practice 2.app"
-            BlueprintName = "practice 2"
-            ReferencedContainer = "container:practice 2.xcodeproj">
+            BuildableName = "Leaf Project.app"
+            BlueprintName = "Leaf Project"
+            ReferencedContainer = "container:Leaf Project.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -85,9 +85,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "6AFC14F02AF6EDD500A40C93"
-            BuildableName = "practice 2.app"
-            BlueprintName = "practice 2"
-            ReferencedContainer = "container:practice 2.xcodeproj">
+            BuildableName = "Leaf Project.app"
+            BlueprintName = "Leaf Project"
+            ReferencedContainer = "container:Leaf Project.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

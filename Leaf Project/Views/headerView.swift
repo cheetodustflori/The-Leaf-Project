@@ -16,10 +16,10 @@ struct headerView: View {
         
         ZStack {
             
-            Color(red: 0.7, green: 0.882352, blue: 0.7)
+            Color(red: 0.621, green: 0.789, blue: 0.656)
                 .ignoresSafeArea()
             
-            VStack{
+            VStack (spacing: 0) {
                 Text(title)
                     .font(.largeTitle)
                     .foregroundColor(Color.white)

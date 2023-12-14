@@ -8,14 +8,14 @@
 import SwiftUI
 
 struct createAccountView: View {
+    
     @State var name = ""
     @State var email = ""
     @State var password = ""
     
-    
     var body: some View {
-        VStack {
-            headerView(title: "create account", subtitle: "subtitle")
+        VStack (spacing: 0) {
+            headerView(title: "create account", subtitle: "fill out the form below !")
             
             Form {
                 TextField("full name", text: $name)
@@ -35,13 +35,14 @@ struct createAccountView: View {
                 }
             }
             
+            .offset(y: -25)
+            .background(Color(red: 0.621, green: 0.789, blue: 0.656))
+            .scrollContentBackground(.hidden)
                     
             
         }
         
-        .offset(y: -50)
-        
-        Spacer()
+     
     }
 }
 
