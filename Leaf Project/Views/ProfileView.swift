@@ -21,27 +21,17 @@ struct ProfileView: View {
                       .foregroundColor(Color(red: 0.621, green: 0.789, blue: 0.656))
                       
                   
-                  VStack (alignment: .leading, spacing: 20.0) {
+                  VStack (spacing: 20.0) {
                       
                       HStack {
                           
                           VStack{
-                           
-                              Rectangle().foregroundColor(.white)
-                                  .cornerRadius(10)
-                                  .frame(width: 115, height: 40)
-                                  .offset(y:20)
-                                  .offset(x:20)
-                              
-                              
                               Text("Profile")
-                                  .font(.title)
+                                  .font(.system(size:40))
                                   .fontWeight(.bold)
-                                  .foregroundColor(Color(red: 0.621, green: 0.789, blue: 0.656))
+                                  .foregroundColor(.white)
                                   .multilineTextAlignment(.leading)
-                                  .offset(y:-25)
-                                  .offset(x:20)
-                              
+                                  .offset(x:20,y:25)
                           }
                           
                           
@@ -50,46 +40,47 @@ struct ProfileView: View {
                           Image(systemName: "pencil.circle.fill")
                               .foregroundColor(Color.white)
                               .scaleEffect(CGSize(width: 2.0, height: 2.0))
-                              .offset(x:-30)
+                              .offset(x:-30,y:25)
                           
                       }
-                      
-                      Spacer()
-                          .frame(height:20)
-                      
                       ZStack {
                           
                           Rectangle().foregroundColor(.white)
-                              .cornerRadius(15)
                               .shadow(radius:15)
-                              .frame(height: 450)
-                              .padding()
+                              .frame(height: 700)
+                              .offset(y:100)
+                              .ignoresSafeArea()
                           
-                          Circle().stroke(Color(red: 0.513, green: 0.703, blue: 0.553),lineWidth: 10)
-                              .fill(Color(red: 0.513, green: 0.703, blue: 0.553))
+                          Circle().stroke(Color(red: 0.621, green: 0.789, blue: 0.656),lineWidth: 10)
+                              .fill(Color(red: 0.621, green: 0.789, blue: 0.656))
                               .offset(y:-230)
                               .frame(width: 150, height: 150)
                           
                           Image(systemName: "person.circle.fill")
                               .foregroundColor(Color.white)
-                              .scaleEffect(CGSize(width: 8.5, height: 8.5))
+                              .font(.system(size:150))
                               .offset(y:-230)
+                        
                           
-                          VStack {
+                          VStack (alignment: .leading){
                               
-                              Image("leaf_logo")
-                                  .resizable()
-                                  .frame(width: 100, height: 100, alignment: .center)
-                                  .foregroundColor(Color.red)
-                                  .scaleEffect(x: 0.5, y: 0.5)
+                              Spacer()
+                                  .frame(height:70)
+                              
+                              
+                              Text("Name")
+                                  .font(.largeTitle)
+                                  .fontWeight(.bold)
+                              
                               HStack{
                                   Text("@username")
                                       .bold()
                                       .foregroundColor(Color(red: 0.621, green: 0.789, blue: 0.656))
-                                  Spacer()
-                                      .frame(width:5)
-                                  Text("Name")
                               }
+                              
+                              Text("Hello this is a description of this person's\nprofile. I am a user of this very interesting\napp. I can't wait to learn more about finance!")
+                              
+                              Text("\n")
                               
                               HStack{
                                   Text("Rank:")
@@ -107,21 +98,36 @@ struct ProfileView: View {
                               HStack{
                                   Text("Date Joined:")
                                       .bold()
-                                  Text("0/0/0000")
+                                  Text("01/01/2024")
+                              }
+                              
+                             /* List{
+                                  Button(systemImage: "star") {
+                                      
+                                  }
+                                  Button(systemImage: "star") {
+                                      
+                                  }
+                                  Button(systemImage: "star") {
+                                      
+                                  }
+                              }*/
+                              
+                              
+                              HStack {
+                                  Spacer()
+                                  NavigationLink("sign out !", destination: LoginView())
+                                      .accentColor(Color(red: 0.621, green: 0.789, blue: 0.656))
+                                      .buttonStyle(.bordered)
+                                      .offset(y:100)
+                                      .padding()
+                                  Spacer()
                               }
                               
                               
-                              Spacer()
-                                  .frame(height: 100)
-                              
-                              NavigationLink("sign out !", destination: LoginView())
-                                  .accentColor(Color(red: 0.621, green: 0.789, blue: 0.656))
-                                  .buttonStyle(.bordered)
-                              
                           }
-                          
-                          
-                          
+                          .padding()
+
                           
                       }
                       

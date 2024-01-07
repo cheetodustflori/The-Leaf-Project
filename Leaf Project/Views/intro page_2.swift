@@ -36,6 +36,10 @@ struct introPage2View : View {
                         .foregroundColor(Color.white)
                         .multilineTextAlignment(.center)
                     
+                    NavigationLink("view your missions !", destination: missionTaskView())
+                        .accentColor(.white)
+                        .buttonStyle(.bordered)
+                    
                 }
                 
                 
