@@ -30,7 +30,6 @@ struct TabBar: View {
             
         }
         
-        Text("hello")
     }
 }
 
