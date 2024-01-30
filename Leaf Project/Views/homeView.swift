@@ -14,17 +14,12 @@ struct homeView: View {
         VStack{
             headerView(title: "Welcome to Leaf", subtitle: "Home !")
             
-            
-            
-            
         }
-        
-       
-        
         
         
     }
 }
+
 
 struct homeView_Previews: PreviewProvider {
     static var previews: some View {
